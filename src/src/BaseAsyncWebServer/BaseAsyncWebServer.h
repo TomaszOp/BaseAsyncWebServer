@@ -7,6 +7,9 @@
 #include <ESPAsyncWebServer.h>
 #include "Tools.h"
 
+#include <ArduinoJson.h>
+
+	static StaticJsonDocument<256> jsonBuffer;
 
 	class BaseAsyncWebServer
 	{
