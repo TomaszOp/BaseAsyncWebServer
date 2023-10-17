@@ -10,6 +10,7 @@
 #include <ArduinoJson.h>
 
 	static StaticJsonDocument<256> jsonBuffer;
+	static char JSONmessageBuffer[1024];
 
 	class BaseAsyncWebServer
 	{
@@ -33,10 +34,11 @@
 		
 		char * BaseUrl;
 
-		private: 
+		protected: 
 
 		WifiManager * ptrWifiManager;
 
+		private:
 
 	}; 
 
